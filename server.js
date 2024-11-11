@@ -9,7 +9,7 @@ app.use('/Views', express.static(path.join(__dirname, 'public', 'Views')));
 app.use('/Images', express.static(path.join(__dirname, 'public', 'Images')));
 
 app.get('/', (req, res) => {
-   res.sendFile(__dirname + '/public/Views/login.html');
+   res.sendFile(__dirname + '/public/Views/Login.html');
 }); 
 
 app.listen(PORT, () => {
