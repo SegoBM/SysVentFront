@@ -9,8 +9,8 @@ app.use('/Views', express.static(path.join(__dirname, 'public', 'Views')));
 app.use('/Images', express.static(path.join(__dirname, 'public', 'Images')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'views', 'index.html'));
-});
+   res.sendFile(__dirname + '/public/Views/login.html');
+}); 
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
