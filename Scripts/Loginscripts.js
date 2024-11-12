@@ -25,7 +25,7 @@ class AuthApp {
         const rol = document.getElementById('userType').value;
 
         try {
-            const response = await fetch('https://localhost:7177/api/Usuarios', {
+            const response = await fetch('http://www.sysventapi.somee.com/api/Usuarios', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ class AuthApp {
         const contraseña = document.getElementById('loginPassword').value;
 
         try {
-            const response = await fetch('https://localhost:7177/api/Usuarios/login', {
+            const response = await fetch('http://www.sysventapi.somee.com/api/Usuarios/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -74,7 +74,7 @@ class AuthApp {
 
             if (response.ok) {
                 alert('Inicio de sesión exitoso');
-                window.location.href = 'index.html';
+                window.location.href = '/Views/Dashboard.html';
             } else {
                 alert('Error al iniciar sesión: ' + result.message);
             }
