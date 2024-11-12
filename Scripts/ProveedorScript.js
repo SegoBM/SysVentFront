@@ -1,6 +1,6 @@
 class ProveedorApp {
     constructor() {
-        this.providersUrl = 'http://localhost:5017/api/Proveedores';
+        this.providersUrl = 'http://www.sysventapi.somee.com/api/Proveedores';
         this.init();
     }
 

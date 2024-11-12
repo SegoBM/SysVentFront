@@ -1,6 +1,6 @@
 class AuthApp {
     constructor() {
-        this.providersUrl = 'https://localhost:5017/api/Proveedores';
+        this.providersUrl = 'http://www.sysventapi.somee.com/api/Proveedores';
         this.init();
         window.toggleForms = this.toggleForms.bind(this); 
     }

@@ -1,8 +1,8 @@
 class PedidoApp {
     constructor() {
-        this.ordersUrl = 'http://localhost:5017/api/Pedidos';
-        this.clientsUrl = 'http://localhost:5017/api/Clientes';
-        this.productsUrl = 'http://localhost:5017/api/Productos';
+        this.ordersUrl = 'http://www.sysventapi.somee.com/api/Pedidos';
+        this.clientsUrl = 'http://www.sysventapi.somee.com/api/Clientes';
+        this.productsUrl = 'http://www.sysventapi.somee.com/api/Productos';
         this.productsMap = {};
         this.init();
     }
