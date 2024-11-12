@@ -1,7 +1,7 @@
 class ProductoApp {
     constructor() {
-        this.providersUrl = 'http://www.sysventapi.somee.com/api/Proveedores';
-        this.productUrl = 'http://www.sysventapi.somee.com/api/Productos';
+        this.providersUrl = 'https://www.sysventapi.somee.com/api/Proveedores';
+        this.productUrl = 'https://www.sysventapi.somee.com/api/Productos';
         this.providerMap = {};
         this.init();
     }

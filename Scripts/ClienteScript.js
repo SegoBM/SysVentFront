@@ -1,6 +1,6 @@
 class ClienteApp {
     constructor() {
-        this.clientsUrl = 'http://www.sysventapi.somee.com/api/Clientes';
+        this.clientsUrl = 'https://www.sysventapi.somee.com/api/Clientes';
         this.init();
     }
 

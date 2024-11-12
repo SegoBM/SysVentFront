@@ -1,6 +1,6 @@
 class AuthApp {
     constructor() {
-        this.providersUrl = 'http://www.sysventapi.somee.com/api/Proveedores';
+        this.providersUrl = 'https://www.sysventapi.somee.com/api/Proveedores';
         this.init();
         window.toggleForms = this.toggleForms.bind(this); 
     }
@@ -25,7 +25,7 @@ class AuthApp {
         const rol = document.getElementById('userType').value;
 
         try {
-            const response = await fetch('http://www.sysventapi.somee.com/api/Usuarios', {
+            const response = await fetch('https://www.sysventapi.somee.com/api/Usuarios', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ class AuthApp {
         const contraseña = document.getElementById('loginPassword').value;
 
         try {
-            const response = await fetch('http://www.sysventapi.somee.com/api/Usuarios/login', {
+            const response = await fetch('https://www.sysventapi.somee.com/api/Usuarios/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
