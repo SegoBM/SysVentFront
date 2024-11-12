@@ -1,5 +1,7 @@
 body {
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 .sidebar {
     height: 100vh;
@@ -19,11 +21,23 @@ body {
 .content {
     margin-left: 250px;
     padding: 20px;
-    width: 100%;
-    transition: margin-left 0.3s ease;
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s ease, width 0.3s ease;
+    min-width: 300px; /* Establece un ancho mínimo para el contenido */
+}
+.container {
+    padding-top: 0px; /* Quita el espacio superior */
+}
+.table-container {
+    max-height: 400px; /* Ajusta esta altura según tus necesidades */
+    overflow-y: auto;
+}
+.table {
+    margin-top: 0; /* Asegúrate de que la tabla esté arriba */
 }
 .content.expanded {
     margin-left: 60px;
+    width: calc(100% - 60px);
 }
 .sidebar img {
     display: block;
@@ -73,6 +87,9 @@ body {
 }
 .alert-custom {
     margin-left: 5%;
+}
+.btn-edit {
+      color: #ffffff; /* Cambia este valor al color que desees */
 }
 @media (max-width: 768px) {
     .sidebar {
