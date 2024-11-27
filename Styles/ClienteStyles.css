@@ -89,7 +89,7 @@ body {
     margin-left: 5%;
 }
 .btn-edit {
-      color: #ffffff; /* Cambia este valor al color que desees */
+      color: #ffffff; 
 }
 @media (max-width: 768px) {
     .sidebar {

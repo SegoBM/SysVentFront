@@ -19,11 +19,11 @@
                 <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
                 <img src="../Images/Logo.png" style="height: 220px; width: 220px;" alt="Logo de la Empresa">
                 <nav class="nav flex-column">
-                    <a class="nav-link active" href="/Views/Dashboard.html"><i class="fas fa-home"></i><span>Inicio</span></a>
-                    <a class="nav-link" href="/Views/Productos.html"><i class="fas fa-box"></i><span>Productos</span></a>
-                    <a class="nav-link" href="/Views/proveedores.html"><i class="fas fa-tags"></i><span>Proveedores</span></a>
-                    <a class="nav-link" href="/Views/Cliente.html"><i class="fas fa-user"></i><span>Clientes</span></a>
-                    <a class="nav-link" href="/Views/Pedidos.html"><i class="fas fa-shopping-cart"></i><span>Pedidos</span></a>
+                    <a class="nav-link active" href="/HTML/Dashboard.html"><i class="fas fa-home"></i><span>Inicio</span></a>
+                    <a class="nav-link" href="/HTML/Productos.html"><i class="fas fa-box"></i><span>Productos</span></a>
+                    <a class="nav-link" href="/HTML/proveedores.html"><i class="fas fa-tags"></i><span>Proveedores</span></a>
+                    <a class="nav-link" href="/HTML/Cliente.html"><i class="fas fa-user"></i><span>Clientes</span></a>
+                    <a class="nav-link" href="/HTML/Pedidos.html"><i class="fas fa-shopping-cart"></i><span>Pedidos</span></a>
                 </nav>
             </div>
 
@@ -31,26 +31,22 @@
             <div class="content col">
                 <div class="container">
                     <h1 class="text-center">Proveedores</h1>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#providerModal">Agregar Proveedor</button>
-                            <div class="table-container table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Teléfono</th>
-                                            <th>Correo</th>
-                                            <th>Dirección</th>
-                                            <th>Acciones</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="providerTableBody">
-                                        <!-- Las filas de proveedores se generarán dinámicamente -->
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                    <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#providerModal">Agregar Proveedor</button>
+                    <div class="table-container table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Teléfono</th>
+                                    <th>Correo</th>
+                                    <th>Dirección</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="providerTableBody">
+                                <!-- Las filas de proveedores se generarán dinámicamente -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
@@ -96,7 +92,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="../Scripts/ProveedorScript.js"></script>
+    <script src="../Modelos/ProveedoresModel.js" type="module"></script>
+    <script src="../Vista/ProveedoresView.js" type="module"></script>
+    <script src="../Controladores/ProveedoresController.js" type="module"></script>
     <script>
     function toggleSidebar() {
         if (window.innerWidth > 768) {
